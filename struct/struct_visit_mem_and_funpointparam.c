@@ -9,6 +9,7 @@ struct Books {
 };
 
 /* 函数声明 */
+//void cout(struct Books book);
 void cout(struct Books *book);
 
 int main() {
@@ -25,6 +26,9 @@ int main() {
     strcpy(book2.author, "Nuha Ali");
     strcpy(book2.subject, "C++ Programming Tutorial");
     book2.book_id = 6495408;
+
+    //cout(book1);
+    //cout(book2);
 
     cout(&book1);
     cout(&book2);

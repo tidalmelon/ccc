@@ -69,7 +69,7 @@ struct NODE {
 }
 ```
 
-如果两个结构体互相包含，则需要对其中一个结构体进行不完整性声明
+如果两个结构体**互相包含**，则需要对其中一个结构体进行不完整性声明
 ```
 struct B;
 
@@ -84,6 +84,24 @@ struct B {
 }
 
 ```
+
+
+### 结构体变量的初始化  
+
+struct_init.c
+
+### 访问结构体成员
+
+struct_visit_mem_and_funparam.c
+
+### 结构体作为函数参数  
+
+struct_visit_mem_and_funpointparam.c
+
+
+
+
+
 
 
 
