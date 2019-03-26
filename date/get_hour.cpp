@@ -5,7 +5,7 @@
 
 int main() {
 
-    std::string dt = "2019-03-18 14";
+    std::string dt = "2019-03-18 04";
 
     std::string str2 = dt.substr(11,12); 
 
