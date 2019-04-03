@@ -10,13 +10,14 @@ void timestamp2str(time_t t, char *ptime, size_t size) {
 }
 
 time_t str2timestamp(char *str_time){
-    struct tm stm;
+    struct tm stm = {0};
     strptime(str_time, "%Y-%m-%d",&stm);
     time_t t = mktime(&stm);
     return t;
 }
 
-void get_least_7_days(char (*days)[12], char *str_time) {
+//void get_least_7_days(char (*days)[12], char *str_time) {
+void get_least_7_days(char days[7][12], char *str_time) {
     time_t t_timestamp = str2timestamp(str_time);
     size_t i;
     for(i=0; i<7; i++) {
@@ -31,7 +32,7 @@ void get_least_7_days(char (*days)[12], char *str_time) {
 
 int main() {
     char strtime[] = "2019-04-01";
-    char arr[7][12];
+    char arr[7][12] = {0};
 
     get_least_7_days(arr, strtime);
 
