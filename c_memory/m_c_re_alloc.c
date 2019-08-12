@@ -16,16 +16,16 @@ int main() {
         fprintf(stderr, "Error - unable to allocate required memory\n");
     } else {
         strcpy(description, "Zara ali a DPS student");
-        strcat(description, " She is in class 10th, She is in class 10thShe is in class 10thShe is in class 10thShe is in class 10thShe is in class 10thShe is in class 10th");
+        //strcat(description, " She is in class 10th, She is in class 10thShe is in class 10thShe is in class 10thShe is in class 10thShe is in class 10thShe is in class 10th");
     }
 
     /*存储更大的描述*/
-    //description = (char*)realloc(description, 100*sizeof(char));
-    //if (description == NULL) {
-    //    fprintf(stderr, "Error - unable to allocate required memory\n");
-    //} else {
-    //    strcat(description, " She is in class 10th");
-    //}
+    description = (char*)realloc(description, 100*sizeof(char));
+    if (description == NULL) {
+        fprintf(stderr, "Error - unable to allocate required memory\n");
+    } else {
+        strcat(description, " She is in class 10th, She is in class 10th");
+    }
 
     /*如果不增加内存, 会爆错*/
     //strcat(description, " She is in class 10th, She is in class 10thShe is in class 10thShe is in class 10thShe is in class 10thShe is in class 10thShe is in class 10th");
