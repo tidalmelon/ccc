@@ -22,6 +22,9 @@ int main() {
     printf("size of list_node = %d\n", sizeof(node));
     printf("size of list_node * = %d\n", sizeof(ptr));
 
+
+    printf("size of char=%d\n", sizeof(char));
+
     return 0;
 }
 
