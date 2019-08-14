@@ -15,9 +15,10 @@ int main() {
 
     char *ptr_b = &(node.b);
 
-    printf("%p\n%p\n\n", ptr, ptr_a);
-
-    printf("%p\n%p\n", ptr, ptr_b);
+    printf("++++++memory address++++++\n");
+    printf("prt=%p\tprt_a=%p\n", ptr, ptr_a);
+    printf("prt=%p\tprt_b=%p\n", ptr, ptr_b);
+    printf("++++++memory address++++++\n");
     
     printf("size of list_node = %d\n", sizeof(node));
     printf("size of list_node * = %d\n", sizeof(ptr));

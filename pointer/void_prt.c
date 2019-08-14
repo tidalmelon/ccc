@@ -23,6 +23,9 @@ int main() {
     printf("size of long=%d\n", sizeof(long));
     printf("size of double=%d\n", sizeof(double));
 
+    char chr = 'A';
+    printf("size of char=%d\n", sizeof chr);
+
 
     return 0;
 }
